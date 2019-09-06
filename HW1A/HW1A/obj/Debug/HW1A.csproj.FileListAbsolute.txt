@@ -1,0 +1,7 @@
+C:\Users\lupe\source\repos\ISAM5430\HW1A\HW1A\bin\Debug\HW1A.exe.config
+C:\Users\lupe\source\repos\ISAM5430\HW1A\HW1A\bin\Debug\HW1A.exe
+C:\Users\lupe\source\repos\ISAM5430\HW1A\HW1A\bin\Debug\HW1A.pdb
+C:\Users\lupe\source\repos\ISAM5430\HW1A\HW1A\obj\Debug\HW1A.csprojAssemblyReference.cache
+C:\Users\lupe\source\repos\ISAM5430\HW1A\HW1A\obj\Debug\HW1A.csproj.CoreCompileInputs.cache
+C:\Users\lupe\source\repos\ISAM5430\HW1A\HW1A\obj\Debug\HW1A.exe
+C:\Users\lupe\source\repos\ISAM5430\HW1A\HW1A\obj\Debug\HW1A.pdb
