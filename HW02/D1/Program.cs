@@ -78,18 +78,18 @@ namespace D1
                 iWhileLoopCounter++;
             }
             //  display results
-            WriteLine($"Number of Zeros: {iNumberOfZeros}");
-            WriteLine($"Number of Evens: {iNumberOfEven}");
-            WriteLine($"Number of Positives: {iNumberOfPositive}");
-            WriteLine($"Largest: {iLargest}");
-            WriteLine($"Smallest: {iSmallest}");
+            WriteLine($"D1-1: Number of Positives: {iNumberOfPositive}");
+            WriteLine($"D1-2: Number of Zeros: {iNumberOfZeros}");
+            WriteLine($"D1-3: Number of Evens: {iNumberOfEven}");
+            WriteLine($"D1-5: Largest: {iLargest}");
+            WriteLine($"D1-6: Smallest: {iSmallest}");
 
             if(iFirstHalfOne == iSecondHalfOne)
             {
-                WriteLine("First and Second halves are equal.");
+                WriteLine("D1-7: First and Second halves are equal.");
             } else
             {
-                WriteLine("First and Second havles are NOT equal.");
+                WriteLine("D1-7: First and Second havles are NOT equal.");
             }
             WriteLine("\n");
         }
