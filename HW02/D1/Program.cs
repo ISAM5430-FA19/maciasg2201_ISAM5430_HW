@@ -18,8 +18,8 @@ namespace D1
             //  setup while loop counter
             int iWhileLoopCounter = 0;
 
-            int iNumberOfPositive = 0, iNumberOfZeros = 0, iNumberOfEven = 0, iCurrentEntry, iPreviousEntry;
-            int iFirstHalfOne, iFirstHalfTwo, iSecondHalfOne, iSecondHalfTwo;
+            int iNumberOfPositive = 0, iNumberOfZeros = 0, iNumberOfEven = 0, iCurrentEntry;
+            int iFirstHalfOne = 0, iSecondHalfOne = 0;
             int iLargest = int.MinValue, iSmallest = int.MaxValue;
 
             while (iWhileLoopCounter < iCount)
@@ -58,6 +58,21 @@ namespace D1
                     iLargest = iCurrentEntry;
                 }
 
+                if(iWhileLoopCounter == 1)
+                {
+                    iFirstHalfOne = iCurrentEntry;
+                } else if (iWhileLoopCounter == 2)
+                {
+                    iFirstHalfOne += iCurrentEntry;
+                } else if (iWhileLoopCounter == iCount - 1)
+                {
+                    iSecondHalfOne = iCurrentEntry;
+                } else if (iWhileLoopCounter == iCount)
+                {
+                    iSecondHalfOne += iCurrentEntry;
+                }
+
+
 
                 //  increment loop counter
                 iWhileLoopCounter++;
@@ -68,6 +83,14 @@ namespace D1
             WriteLine($"Number of Positives: {iNumberOfPositive}");
             WriteLine($"Largest: {iLargest}");
             WriteLine($"Smallest: {iSmallest}");
+
+            if(iFirstHalfOne == iSecondHalfOne)
+            {
+                WriteLine("First and Second halves are equal.");
+            } else
+            {
+                WriteLine("First and Second havles are NOT equal.");
+            }
             WriteLine("\n");
         }
     }
