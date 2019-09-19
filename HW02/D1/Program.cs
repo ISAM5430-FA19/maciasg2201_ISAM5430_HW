@@ -58,17 +58,22 @@ namespace D1
                     iLargest = iCurrentEntry;
                 }
 
+                //  check for first and second half sum
                 if(iWhileLoopCounter == 1)
                 {
+                    //  store first half number one
                     iFirstHalfOne = iCurrentEntry;
                 } else if (iWhileLoopCounter == 2)
                 {
+                    //  store add second half number to one
                     iFirstHalfOne += iCurrentEntry;
                 } else if (iWhileLoopCounter == iCount - 1)
                 {
+                    //  store second half number one
                     iSecondHalfOne = iCurrentEntry;
                 } else if (iWhileLoopCounter == iCount)
                 {
+                    //  add second half number two to one
                     iSecondHalfOne += iCurrentEntry;
                 }
 
@@ -84,6 +89,7 @@ namespace D1
             WriteLine($"D1-5: Largest: {iLargest}");
             WriteLine($"D1-6: Smallest: {iSmallest}");
 
+            //  check first and second half values and display results.
             if(iFirstHalfOne == iSecondHalfOne)
             {
                 WriteLine("D1-7: First and Second halves are equal.");
