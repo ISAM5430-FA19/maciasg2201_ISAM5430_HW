@@ -26,7 +26,7 @@ namespace C10
                     Write("X");
                 }
                 //  print new line
-                Write("\n");
+                WriteLine();
             }
         }
     }
