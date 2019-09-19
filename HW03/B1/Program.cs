@@ -23,14 +23,14 @@ namespace B1
                 //  ask user to enter a score
                 Write("Enter a score: ");
                 //  accept user entered store and store in score variable.
-                iScore = Convert.ToInt32(ReadLine());
+                iScore = int.Parse(ReadLine());
                 //  check if score is within valid range, break out of loop if not.
                 if (iScore >= 0 && iScore <= 100)
                 {
                     //  add score value to score sum
                     iScoreSum += iScore;
                     //  compare score to see if it's highest.
-                    if(iScore > iBestScore)
+                    if (iScore > iBestScore)
                     {
                         //  save score best score
                         iBestScore = iScore;
@@ -51,6 +51,10 @@ namespace B1
             {
                 //  display results.
                 WriteLine("Best Score: " + iBestScore + "\nAverage: " + iScoreSum / iScoreCount);
+            } else
+            {
+                //  display that no scores were entered.
+                WriteLine("No scores entered.");
             }
         }
     }
