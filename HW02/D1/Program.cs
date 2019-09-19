@@ -89,7 +89,7 @@ namespace D1
                 WriteLine("D1-7: First and Second halves are equal.");
             } else
             {
-                WriteLine("D1-7: First and Second havles are NOT equal.");
+                WriteLine("D1-7: First and Second halves are NOT equal.");
             }
             WriteLine("\n");
         }
