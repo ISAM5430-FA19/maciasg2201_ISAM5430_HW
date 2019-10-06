@@ -52,6 +52,15 @@ namespace C3
         {
             int dollars = _dollars;
             int cents = _cents;
+            _hundreds = 0;
+            _fifties = 0;
+            _twenties = 0;
+            _tens = 0;
+            _singles = 0;
+            _quarters = 0;
+            _dimes = 0;
+            _nickels = 0;
+            _pennies = 0;
 
             if (dollars >= 100)
             {
